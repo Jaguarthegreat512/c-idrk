@@ -1,3 +1,10 @@
+/**
+* Name: Jude
+* Program Name: Calculator
+* Date: 9/9/25
+* Extra: Different colors
+*/
+
 #include <iostream>
 using namespace std;
 
@@ -45,3 +52,4 @@ int main() {
 
     return 0;
 }
+
