@@ -1,0 +1,64 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    //partA
+    int currentTemperature;
+    bool isSomeoneHome;
+
+    cout << "Enter the current temperature: ";
+    cin >> currentTemperature;
+
+    cout << "Is someone home? (1 for yes, 0 for no): ";
+    cin >> isSomeoneHome;
+
+    if (isSomeoneHome) {
+        if (currentTemperature > 75) {
+            cout << "Activating cooling system." << endl;
+        } else if (currentTemperature < 65) {
+            cout << "Activating heating system." << endl;
+        } else {
+            cout << "Temperature is stable. System standby." << endl;
+        }
+    } else {
+        cout << "System idle. No one is home." << endl;
+    }
+
+    //partB
+    string username, password;
+
+
+    cout << "Enter username: ";
+    cin >> username;
+
+    cout << "Enter password: ";
+    cin >> password;
+
+
+    if (username == "Jaguarthegreat512" && password == "Ch!ck3nGam3D3v") {
+        cout << "Access granted." << endl;
+    } else {
+        cout << "Access denied." << endl;
+    }
+
+    //partC
+    int age;
+    string day;
+
+    cout << "Enter your age: ";
+    cin >> age;
+
+    cout << "Enter the day of the week: ";
+    cin >> day;
+
+    if (age <= 12 || day == "Tuesday"||"tuesday") {
+        cout << "You qualify for a free pass!" << endl;
+    } else {
+        cout << "Sorry, no free pass for you." << endl;
+    }
+}
+
+
+
+    
